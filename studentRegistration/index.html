@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+
+    <p>Enter your details below.</p>
+
+    <form method="post" action="/studentRegistration/registration">
+        <!-- Enrolment number -->
+        <label for="enrollment">Enrolment Number:</label>
+        <input type="text" id="enrollment" name="enrollment">
+
+        <br><br>
+
+        <!-- First name -->
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName">
+
+        <br><br>
+
+        <!-- Last name -->
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName">
+
+        <br><br>
+
+        <!-- Semester -->
+        <label for="semester">Semester:</label>
+        <input type="number" id="semester" name="semester"
+               min="1" max="8">
+
+        <br><br>
+
+        <!-- Contact number -->
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact">
+
+        <br><br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+        <button type="button"><a href="allStudents" color="black">All Student List</a></button>
+    </form>
+</body>
+</html>
